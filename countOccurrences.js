@@ -14,9 +14,10 @@
 // objects are unsorted so the order of the keys doesn't matter
 
 function countWordOccurences(inputPhrase) {
-    const words = inputPhrase.split(" " )
+    const words = inputPhrase.split(" " ) // could normalise and trim punctuation here too
     const wordCount = {}
     words.forEach(word => {
+        // If the word has been seen before, use it's count. If not, use 0. Then increment
         wordCount[word] = (wordCount[word] || 0) + 1
     })
     return wordCount
