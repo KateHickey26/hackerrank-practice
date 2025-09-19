@@ -13,7 +13,7 @@
 // }
 // objects are unsorted so the order of the keys doesn't matter
 
-async function countWordOccurences(inputPhrase) {
+function countWordOccurences(inputPhrase) {
     const words = inputPhrase.split(" " )
     const wordCount = {}
     words.forEach(word => {

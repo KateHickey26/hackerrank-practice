@@ -5,7 +5,7 @@
 async function searchPosts(searchTerm) {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts")
     const jsonData = await response.json()
-    return jsonData.filter(post => post.title.includes(searchTerm))
+    return jsonData.filter(post => post.title.toLowerCase().includes(searchTerm.toLowerCase())).map(post => post.title) 
 }
 
 searchPosts("qui").then(console.log)
