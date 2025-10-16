@@ -1,5 +1,5 @@
 // Fetch posts from
-// 👉 https://jsonplaceholder.typicode.com/posts
+// https://jsonplaceholder.typicode.com/posts
 // Write a function that takes a search term (string) and returns an array of post titles that contain that term (case-insensitive).
 
 async function searchPosts(searchTerm) {

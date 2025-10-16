@@ -1,5 +1,5 @@
 // Fetch all users from
-// 👉 https://jsonplaceholder.typicode.com/users
+// https://jsonplaceholder.typicode.com/users
 // Return an array of usernames where the email ends with .org.
 
 async function getOrgUsers() {
